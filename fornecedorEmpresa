@@ -1,0 +1,25 @@
+import Fornecedor from "./fornecedor"; 
+
+class FornecedorEmpresa extends Fornecedor {
+    constructor(nome = 'Sem Nome', fone = "(00) 00000-0000", cnpj = "", ie = "") {
+        super(nome, fone)
+        this.cnpj = cnpj
+        this.ie = ie
+    }
+
+    setcnpj(cnpj) {
+        this.cnpj = cnpj
+    }
+
+    setie(ie) {
+        this.ie = ie
+    }
+
+    getcnpj(){
+        return this.cnpj
+    }
+
+    getie(){
+        return this.ie
+    }
+}
